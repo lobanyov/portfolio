@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>portfolio</title>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__avatar-field">
+          <img class="header__avatar" src="assets/images/avatar-second.jpg" alt="avatar" width="100">
+      </div>
+      <div class="header__personal-data personal-data">
+        <h1 class="personal-data__heading">Vadim Lobanyov</h1>
+        <div class="personal-data__git-logo git-logo">
+          <h2 class="git-logo__heading">GitHub</h2>
+          <a class="git-logo__link" href="https://github.com/lobanyov"></a>
+        </div>
+        <div class="personal-data__contacts contacts">
+          <h2 class="contacts__heading">Social networks</h2>
+          <div class="contacts__sn-links sn-links">
+            <a class="sn-links__link-first" href="https://vk.com/vadimlobanev"></a>
+            <a class="sn-links__link-second" href="https://t.me/lobanyov"></a>
+            <a class="sn-links__link-third" href="#" title="+375296017535"></a>
+            <a class="sn-links__link-fourth" href="https://www.instagram.com/lobanyoyoyov/"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="main-content__edu-section edu-section">
+        <h2 class="edu-section__heading">Education</h2>
+        <button id="toggleBtn" class="edu-section__toggle-button"></button>
+        <ul class="edu-section__list">
+          <li class="edu-section__item">
+            <div class="edu-section__logo first-logo-edu"></div>
+            <span class="edu-section__span">School No. 161<br>Minsk, 2001-2010</span>
+          </li>
+          <li class="edu-section__item">
+            <div class="edu-section__logo second-logo-edu"></div>
+            <span class="edu-section__span">Lyceum No. 1<br>Minsk, 2010-2012</span>
+          </li>
+          <li class="edu-section__item">
+            <div class="edu-section__logo third-logo-edu"></div>
+            <span class="edu-section__span">BSUIR<br>Minsk, 2012-2017</span>
+          </li>
+          <li class="edu-section__item">
+            <div class="edu-section__logo fourth-logo-edu"></div>
+            <span class="edu-section__span">Rolling Scopes School<br>Minsk, 2019-2020</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-content__project-section project-section">
+        <h2 class="project-section__heading">Projects</h2>
+        <div class="slider-container">
+          <div class="project-section__slide slide active-slide">
+            <section class="slide__project-description project-description">
+              <h3 class="project-description__heading">theyalow</h3>
+              <ul class="project-description__list">
+                <li class="project-description__item">Adaptive web design (includes desktop and mobile versions)</li>
+                <li class="project-description__item">A successful per-pixel comparison via pixel-perfect extension</li>
+                <li class="project-description__item">Svg-icons</li>
+                <li class="project-description__item">Interactive navigation menu</li>
+                <li class="project-description__item">Form and video element</li>
+              </ul>
+              <div class="project-description__info">
+                <img src="assets/images/information.svg" alt="info" width="25">
+                <p class="project-description__paragraph">Click on image to see the project</p>
+              </div>
+            </section>
+            <img class="project-description__img" src="assets/images/theyalow.png" alt="project-img" width="360">
+          </div>
+  
+          <div class="project-section__slide slide">
+            <section class="slide__project-description project-description">
+              <h3 class="project-description__heading">repair-design-project</h3>
+              <ul class="project-description__list">
+                <li class="project-description__item">Responsive web design</li>
+                <li class="project-description__item">BEM naming convention</li>
+                <li class="project-description__item">Flexbox layout mode</li>
+                <li class="project-description__item">More than two media queries</li>
+                <li class="project-description__item">Sass environment</li>
+                <li class="project-description__item">Forms and video</li>
+              </ul>
+              <div class="project-description__info">
+                <img src="assets/images/information.svg" alt="info" width="25">
+                <p class="project-description__paragraph">Click on image to see the project</p>
+              </div>
+            </section>
+            <img class="project-description__img--second" src="assets/images/repair-design-project.png" alt="project-img" width="390">
+          </div>
+        </div>
+        
+        <button class="project-section__btn-left"></button>
+        <button class="project-section__btn-right"></button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h2 class="footer__heading">RSSchool Q3</h2>
+    </footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

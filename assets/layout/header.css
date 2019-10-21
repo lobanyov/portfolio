@@ -1,0 +1,147 @@
+body {
+  background: #516e8f;
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 1024px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 300px;
+  margin-top: 35px;
+  border-radius: 5px;
+  background: #edeef0;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(0,0,0,0.44);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(0,0,0,0.44);
+  box-shadow: 0px 10px 7px -4px rgba(0,0,0,0.44);
+}
+
+.header__avatar-field {
+  align-self: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 3px;
+  background: #edeef0;
+  box-shadow: 0px 1px 12px -6px rgba(0,0,0,0.44);
+}
+
+.header__avatar {
+  width: 230px;
+  height: 230px;
+  border-radius: 3px;
+  margin: 10px 0 0 10px;
+}
+
+.personal-data {
+  width: 50%;
+  height: 250px;
+  align-self: center;
+  border-radius: 3px;
+  background: #edeef0;
+  box-shadow: 0px 1px 12px -6px rgba(0,0,0,0.44);
+}
+
+.personal-data__heading {
+  padding: 0 0 5px 0;
+  margin: 10px 0 0 0;
+  font-size: 25px;
+  font-family: 'Hind Siliguri', sans-serif;
+  color: #252525;
+  text-align: center;
+  border-bottom: 1px solid rgb(233, 225, 239);
+  box-shadow: 0px 3px 9px -8px rgba(0,0,0,0.44);
+}
+
+.personal-data__git-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 65px;
+  height: 65px;
+  margin: 16px auto 0;
+}
+
+.git-logo__heading {
+  display: block;
+  align-self: center;
+  width: 60px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: normal;
+}
+
+.git-logo__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  background: url("../images/github.svg") no-repeat;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  height: 70px;
+  margin: 15px auto 0;
+  text-align: center;
+}
+
+.contacts__heading {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.contacts__sn-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+  height: 30px;
+  align-self: center;
+}
+
+.sn-links__link-first,
+.sn-links__link-second,
+.sn-links__link-third,
+.sn-links__link-fourth {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.sn-links__link-first {
+  background: url("../images/vk.svg");
+}
+
+.sn-links__link-second {
+  background: url("../images/telegram.svg");
+}
+
+.sn-links__link-third {
+  background: url("../images/viber.svg");
+}
+
+.sn-links__link-fourth {
+  background: url("../images/instagram.svg");
+}

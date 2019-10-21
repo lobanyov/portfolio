@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0 35px 0;
+  border-radius: 5px;
+  text-align: center;
+  background: #edeef0;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  -webkit-box-shadow: 0px 10px 7px -4px rgba(0,0,0,0.44);
+  -moz-box-shadow: 0px 10px 7px -4px rgba(0,0,0,0.44);
+  box-shadow: 0px 10px 7px -4px rgba(0,0,0,0.44);
+}
+
+.footer__heading {
+  display: block;
+  width: 100px;
+  height: 20px;
+  padding: 0;
+  margin: 15px auto 0;
+  font-size: 16px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: normal;
+}
