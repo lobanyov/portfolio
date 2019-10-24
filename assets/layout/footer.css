@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   height: 50px;
-  margin: 10px 0 35px 0;
+  margin: 5px 0 15px 0;
   border-radius: 5px;
   text-align: center;
   background: #edeef0;
@@ -20,4 +20,18 @@
   font-size: 16px;
   font-family: 'Hind Siliguri', sans-serif;
   font-weight: normal;
+}
+
+@media screen and (max-width: 840px) {
+  .footer {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .footer {
+    margin: 0;
+    border-radius: 0;
+    background: #d9dde4;
+  }
 }
