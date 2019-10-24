@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <title>repair-design-project</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background: #272525;
+    }
+
+    .wrapper {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .iframe {
+      position: absolute;
+      display: block;
+      border: none;
+      height: 100vh;
+      width: 100%;
+      margin: 0 auto;
+      background: #fff;
+    }
+
+    .button-changer,
+    .button-return {
+      position: fixed;
+      top: 80%;
+      right: 6%;
+      background: transparent;
+      border: 1px solid rgb(134, 131, 123);
+      width: 100px;
+      height: 40px;
+      font-size: 13px;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      background-color: #e1ddec;
+      color: #131313;
+      border-radius: 5%;
+    }
+    
+    .button-changer:hover,
+    .button-return:hover {
+      cursor: pointer;
+      background: #48b961;
+    }
+
+    .button-changer:focus,
+    .button-return:focus {
+      outline: none;
+    }
+
+    .button-return {
+      top: 86%;
+    }
+
+    .link {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: #131313;
+    }
+
+    @media screen and (max-width: 640px) {
+      .button-changer {
+      display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <iframe class="iframe" src="index.html"></iframe>
+    <button class="button-changer">Mobile</button>
+    <button class="button-return"><a class="link" href="../../index.html">Back</a></button>    
+  </div>
+
+  <script>
+    document.querySelector('.button-changer').addEventListener('click', function() {
+      if (document.querySelector('.button-changer').innerHTML === 'Mobile') {
+        document.querySelector('.button-changer').innerHTML = 'Desktop';
+        document.querySelector('.wrapper').style.width = '640px';
+      } else {
+        document.querySelector('.button-changer').innerHTML = 'Mobile';
+        document.querySelector('.wrapper').style.width = '100%';
+      }
+    });
+  </script>
+</body>
+
+</html>
