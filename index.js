@@ -147,7 +147,9 @@ const swipedetect = (element) => {
 
 			if (elapsedTime < 200) {
 				if (e.target.classList.contains('slide-btn')) return;
-				e.target.click();
+				console.log(e.currentTarget)
+				e.target.parentElement.onclick = () => true;
+				e.target.parentElement.click();
 			}
 
 			if (elapsedTime <= allowedTime && elapsedTime > 200) {
